@@ -149,5 +149,18 @@
         "latitude": -27.5358,
         "longitude": 152.9934,
         "height": 10
-    }
+    },
+    "southbrisbane": {
+        "name": "South Brisbane",
+        "latitude": -27.4848,
+        "longitude": 153.0321,
+        "height": 10
+    },
+    "southgladstone": {
+        "name": "South Gladstone",
+        "latitude": -23.8627,
+        "longitude": 151.2704,
+        "height": 10
+    },
+    
 }
