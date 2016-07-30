@@ -27,6 +27,9 @@ $(document).ready(function() {
     $.getJSON("locationData.json", function(data) {
         console.log("data below");
     console.log(data);
+        printData(data);
+        printData(data);
+        printData(data);
 });
 
 });
@@ -40,6 +43,9 @@ function initMap() {
         });
       }
 
+function printData(data) {
+    console.log(data);
+}
 
 
 
