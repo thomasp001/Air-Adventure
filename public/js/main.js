@@ -27,10 +27,12 @@ $(document).ready(function() {
         console.log(data);
 });
     var location = prompt("Enter location")
-    $.getJSON ("data/" + location + "-aq-2015.json", function(data) {
+    $.getJSON ("data/" + location + "-aq-2015_average.json", function(data) {
         console.log(data);
+        console.log("Worked")
     })
-    chart["data"]["dataPoints"][1]["y"] = "value"
+    
+    //chart["data"]["dataPoints"][1]["y"] = "value"
 
 
 });
