@@ -108,5 +108,16 @@
         "longitude": 139.4920,
         "height": 10
     },
-    
+    "moranbah": {
+        "name": "Moranbah",
+        "latitude": -21.9995,
+        "longitude": 148.0713,
+        "height": 10
+    },
+    "mountaincreek": {
+        "name": "Mountain Creek (Sunshine Coast)",
+        "latitude": -26.6917,
+        "longitude": 153.1038,
+        "height": 10
+    },
 }
