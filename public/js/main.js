@@ -7,7 +7,7 @@ $(document).ready(function() {
 		},
 		data: [              
 		{
-			// You can change it.
+			// You can change it. 
 			type: "pie",
 			dataPoints: [
 				{ label: "Carbon Monoxide",  y: 10  },
@@ -23,6 +23,11 @@ $(document).ready(function() {
 		chart.render();
     var percentageParagraph = document.getElementById("percentage")
     percentageParagraph.innerHTML = "Note: This only represents " + "10" + "% of the air."
+    $.getJSON("locationData.json", function(data) {
+        console.log(data);
+});
+    var location = prompt("Enter location")
+
 
 
 });
@@ -35,3 +40,7 @@ function initMap() {
             zoom: 5
         });
       }
+
+
+
+
