@@ -1,20 +1,87 @@
 {
-    "abbotpoint": {
-        "name": "Abbot Point",
-        "laititude": -19.9496,
-        "longitude": 148.0482,
+    "abbotpoint": {
+        "name": "Abbot Point",
+        "latitude": -19.9496,
+        "longitude": 148.0482,
+        "height": 10
+    },
+    "aldoga": {
+        "name": "Aldoga (Gladstone)",
+        "latitude": -23.8409,
+        "longitude": 151.0627,
+        "height": 2
+    },
+    "ayr": {
+        "name": "Ayr",
+        "latitude": -19.5839,
+        "longitude": 147.4059,
+        "height": 10
+    },
+    "aucklandpoint": {
+        "name": "Auckland Point (Gladstone)",
+        "latitude": -23.8349,
+        "longitude": 151.2539,
         "height": 10
     },
-    "aldoga": {
-        "name": "Aldoga (Gladstone)",
-        "laititude": -23.8409,
-        "longitude": 151.0627,
-        "height": 2
-    },
-    "ayr": {
-        "name": "ayr",
-        "laititude": -19.5839,
-        "longitude": 147.4059,
+    "boatcreek": {
+        "name": "Boat Creek (Gladstone)",
+        "latitude": -23.8200,
+        "longitude": 151.1539,
         "height": 10
-    }
+    },
+    "boyneisland": {
+        "name": "Boyne Island (Gladstone)",
+        "latitude": -23.9408,
+        "longitude": 151.3507,
+        "height": 10
+    },
+    "brisbanecbd": {
+        "name": "Brisbane CBD",
+        "latitude": -27.4774,
+        "longitude": 153.0281,
+        "height": 4
+    },
+    "cannonhill": {
+        "name": "Cannon Hill",
+        "latitude": -27.4654,
+        "longitude": 153.0872,
+        "height": 10
+    },
+    "clinton": {
+        "name": "Clinton (Gladstone)",
+        "latitude": -23.8701,
+        "longitude": 151.2216,
+        "height": 10
+
+    },
+    "deceptionbay": {
+        "name": "Deception Bay",
+        "latitude": -27.1935,
+        "longitude": 153.0347,
+        "height": 10
+    },
+    "flindersview": {
+        "name": "Flinders View (Ipswich)",
+        "latitude": -27.6528,
+        "longitude": 152.7741,
+        "height": 10
+    },
+    "gatton": {
+        "name": "Gatton (South East Queensland)",
+        "latitude": -27.5434,
+        "longitude": 152.3343,
+        "height": 10
+    },
+    "jondaryan": {
+        "name": "Jondaryan",
+        "latitude": -27.3713,
+        "longitude": 151.5934 ,
+        "height": 10
+    },
+    "josephville": {
+        "name":"Josephville",
+        "latitude": -27.9962,
+        "longitude": 152.9257,
+        "height": 10
+    },
 }
