@@ -160,7 +160,7 @@ app.post('/api/pinterest', passportConfig.isAuthenticated, passportConfig.isAuth
 
 /**
  * OAuth authentication routes. (Sign in)
- */
+
 app.get('/auth/instagram', passport.authenticate('instagram'));
 app.get('/auth/instagram/callback', passport.authenticate('instagram', { failureRedirect: '/login' }), (req, res) => {
   res.redirect(req.session.returnTo || '/');
@@ -188,7 +188,7 @@ app.get('/auth/linkedin/callback', passport.authenticate('linkedin', { failureRe
 
 /**
  * OAuth authorization routes. (API examples)
- */
+
 app.get('/auth/foursquare', passport.authorize('foursquare'));
 app.get('/auth/foursquare/callback', passport.authorize('foursquare', { failureRedirect: '/api' }), (req, res) => {
   res.redirect('/api/foursquare');
@@ -205,7 +205,7 @@ app.get('/auth/pinterest', passport.authorize('pinterest', { scope: 'read_public
 app.get('/auth/pinterest/callback', passport.authorize('pinterest', { failureRedirect: '/login' }), (req, res) => {
   res.redirect('/api/pinterest');
 });
-
+ */
 /**
  * Error Handler.
  */
