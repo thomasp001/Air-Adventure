@@ -138,4 +138,16 @@
         "longitude": 146.7813,
         "height": 10
     },
+    "pinkenba": {
+        "name": "Pinkenba",
+        "latitude": -27.4187,
+        "longitude": 153.1330,
+        "height": 10
+    },
+    "rocklea": {
+        "name": "Rocklea",
+        "latitude": -27.5358,
+        "longitude": 152.9934,
+        "height": 10
+    }
 }
