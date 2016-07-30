@@ -125,5 +125,17 @@
         "latitude": -27.7528,
         "longitude": 152.6509,
         "height": 10
-    }
+    },
+    "northmaclean": {
+        "name": "North Maclean",
+        "latitude": -27.7708,
+        "longitude": 153.0300,
+        "height": 10
+    },
+    "pimlico": {
+        "name": "Pimlico (Townsville)",
+        "latitude": -19.2871,
+        "longitude": 146.7813,
+        "height": 10
+    },
 }
