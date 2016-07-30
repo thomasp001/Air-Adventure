@@ -28,9 +28,9 @@ $(document).ready(function() {
         console.log("data below");
     console.log(data);
         printData(data);
-        printData(data);
-        printData(data);
 });
+
+
 
 });
 
