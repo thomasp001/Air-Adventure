@@ -64,14 +64,14 @@ function initMap() {
 
 
 placePins = function(data) {
-    var counter = 0
+    var counter = 0;
     while (counter <= data.length) {
         var marker = new google.maps.Marker({
           position: new google.maps.LatLng(d[counter]["latitude"],d[counter]["longitude"]),
           map: map,
           title: d[counter]["name"]
         });
-    counter++
+    counter++;
     }
 }
 
