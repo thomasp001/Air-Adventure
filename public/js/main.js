@@ -30,7 +30,7 @@ $(document).ready(function() {
     $.getJSON ("data/" + location + "-aq-2015.json", function(data) {
         console.log(data);
     })
-    chart["data"]["dataPoints"][1]["y"] = "value"
+    //chart["data"]["dataPoints"][1]["y"] = "value"
 
 
 });
