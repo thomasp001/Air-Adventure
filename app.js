@@ -123,7 +123,7 @@ app.get('/', homeController.index);
 //app.post('/account/profile', passportConfig.isAuthenticated, userController.postUpdateProfile);
 //app.post('/account/password', passportConfig.isAuthenticated, userController.postUpdatePassword);
 //app.post('/account/delete', passportConfig.isAuthenticated, userController.postDeleteAccount);
-a//pp.get('/account/unlink/:provider', passportConfig.isAuthenticated, userController.getOauthUnlink);
+//app.get('/account/unlink/:provider', passportConfig.isAuthenticated, userController.getOauthUnlink);
 
 /**
  * API examples routes.
