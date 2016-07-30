@@ -27,7 +27,9 @@ $(document).ready(function() {
         console.log(data);
 });
     var location = prompt("Enter location")
-    $.getJSON ("data/" + location + "-aq-2015.json")
+    $.getJSON ("data/" + location + "-aq-2015.json", function(data) {
+        console.log(data);
+    })
     chart["data"]["dataPoints"][1]["y"] = "value"
 
 
