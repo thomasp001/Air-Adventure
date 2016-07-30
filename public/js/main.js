@@ -35,3 +35,8 @@ function initMap() {
             zoom: 3
         });
       }
+
+var marker = new google.maps.Marker({
+            position: (-19.9496, 148.0482),
+            map: map
+          });
