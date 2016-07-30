@@ -1,4 +1,8 @@
+var map;
+
 $(document).ready(function() {
+
+    initMap();
 
   // Place JavaScript code here...
     var chart = new CanvasJS.Chart("myChart", {
@@ -28,8 +32,7 @@ $(document).ready(function() {
 });
     var location = prompt("Enter location")
     $.getJSON ("data/" + location + "-aq-2015_average.json", function(data) {
-        console.log(data);
-        console.log("Worked")
+        placePins(data)
     })
     
     //chart["data"]["dataPoints"][1]["y"] = "value"
@@ -40,12 +43,22 @@ $(document).ready(function() {
 
 function initMap() {
         var mapDiv = document.getElementById('map');
-        var map = new google.maps.Map(mapDiv, {
+        map = new google.maps.Map(mapDiv, {
             center: {lat: -20.9176, lng: 142.7028},
             zoom: 5
         });
       }
 
 
+placePins = function(data) {
+    for each (d in data) {
 
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(d["latitude"],d["longitude"]),
+          map: map,
+          title: d["name"]
+        });
+    }
+}
 

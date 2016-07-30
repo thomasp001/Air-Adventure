@@ -1,4 +1,4 @@
-{
+[
     "abbotpoint": {
         "name": "Abbot Point",
         "latitude": -19.9496,
@@ -120,4 +120,4 @@
         "longitude": 153.1038,
         "height": 10
     },
-}
+]
