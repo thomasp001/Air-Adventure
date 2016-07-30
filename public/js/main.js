@@ -30,9 +30,22 @@ $(document).ready(function() {
     $.getJSON("locationData.json", function(data) {
         console.log(data);
 });
-    var location = prompt("Enter location")
-    $.getJSON ("data/" + location + "-aq-2015_average.json", function(data) {
-        placePins(data)
+
+    var location = prompt("Enter location");
+    console.log('this is the location')
+    console.log(location);
+    $.getJSON ("data/" + String(location) + "_average.json", function(data) {
+        console.log(data);
+        console.log("Worked")
+        data["Nitrogen Oxide (ppm)"]
+        chart["data"]["Nitrogen Oxide (ppm)"][1]["y"] = data["Nitrogen Oxide (ppm)"]
+        chart["data"]["Nitrogen Dioxide (ppm)"][1]["y"] = data["Nitrogen Dixide (ppm)"]
+        chart["data"]["Nitrogen Oxides (ppm)"][1]["y"] = data["Nitrogen Oxides (ppm)"]
+        chart["data"]["Carbon Monoxide (ppm)"][1]["y"] = data["Carbon Monoxide (ppm)"]
+        chart["data"]["PM10 (ug/m^3)"][1]["y"] = data["PM10 (ug/m^3)"]
+        chart["data"]["PM2.5 (ug/m^3)"][1]["y"] = data["PM2.5 (ug/m^3)"]
+        chart["data"]["Bsp (Mm^-1)"][1]["y"] = data["Bsp (Mm^-1)"]
+        chart.render()
     })
     
     //chart["data"]["dataPoints"][1]["y"] = "value"
