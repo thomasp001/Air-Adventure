@@ -7,7 +7,7 @@ $(document).ready(function() {
 		},
 		data: [              
 		{
-			// You can change it.
+			// You can change it. 
 			type: "pie",
 			dataPoints: [
 				{ label: "Carbon Monoxide",  y: 10  },
@@ -39,3 +39,7 @@ var marker = new google.maps.Marker({
             position: (-19.9496, 148.0482),
             map: map
           });
+
+$.get("locationData.json", function(data) {
+    console.log(data);
+});
