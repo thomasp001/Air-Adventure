@@ -26,6 +26,7 @@ $(document).ready(function() {
     $.getJSON("locationData.json", function(data) {
         console.log(data);
 });
+    var location = prompt("Enter location")
 
 
 
