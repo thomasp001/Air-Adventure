@@ -60,4 +60,17 @@
         "longitude": 153.0347,
         "height": 10
     },
+    "flindersview": {
+        "name": "Flinders View (Ipswich)",
+        "latitude": -27.6528,
+        "longitude": 152.7741,
+        "height": 10
+    },
+    "gatton": {
+        "name": "Gatton (South East Queensland)",
+        "latitude": -27.5434,
+        "longitude": 152.3343,
+        "height": 10
+    },
+    
 }
