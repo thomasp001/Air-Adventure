@@ -7,7 +7,7 @@ $(document).ready(function() {
 		},
 		data: [              
 		{
-			// Change type to "doughnut", "line", "splineArea", etc.
+			// You can change it.
 			type: "pie",
 			dataPoints: [
 				{ label: "Carbon Monoxide",  y: 10  },
