@@ -52,14 +52,12 @@
         "latitude": -23.8701,
         "longitude": 151.2216,
         "height": 10
-<<<<<<< HEAD
+
     },
     "deceptionbay": {
         "name": "Deception Bay",
         "latitude": -27.1935,
         "longitude": 153.0347,
-        
-=======
->>>>>>> e416d5b6e4a33d7beb992d1d8ab1d5f0e3777f47
-    }
+        "height": 10
+    },
 }
