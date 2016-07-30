@@ -22,7 +22,7 @@ $(document).ready(function() {
 		
 		chart.render();
     var percentageParagraph = document.getElementById("percentage")
-    percentageParagraph.body = "Note: This only represents " + "10" + "% of the air."
+    percentageParagraph.innerHTML = "Note: This only represents " + "10" + "% of the air."
 
 
 });
