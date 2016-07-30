@@ -27,7 +27,8 @@ $(document).ready(function() {
         console.log(data);
 });
     var location = prompt("Enter location")
-
+    $.getJSON ("data/" + location + "-aq-2015.json")
+    chart["data"]["dataPoints"][1]["y"] = "value"
 
 
 });
