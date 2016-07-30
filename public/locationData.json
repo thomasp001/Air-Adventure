@@ -84,4 +84,17 @@
         "longitude": 152.9257,
         "height": 10
     },
+    "luscombe": {
+        "name": "Luscombe",
+        "latitude": -27.7747,
+        "longitude": 153.2014,
+        "height": 10,
+    },
+    "lytton": {
+        "name": "Lytton",
+        "latitude": -27.4065,
+        "longitude": 153.1527,
+        "height": 10
+    },
+    
 }
