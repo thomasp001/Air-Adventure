@@ -24,7 +24,7 @@ $(document).ready(function() {
     var percentageParagraph = document.getElementById("percentage")
     percentageParagraph.innerHTML = "Note: This only represents " + "10" + "% of the air."
 
-    $.get("locationData.json", function(data) {
+    $.getJSON("locationData.json", function(data) {
         console.log("data below");
     console.log(data);
 });
