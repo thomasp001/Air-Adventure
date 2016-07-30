@@ -72,5 +72,16 @@
         "longitude": 152.3343,
         "height": 10
     },
-    
+    "jondaryan": {
+        "name": "Jondaryan",
+        "latitude": -27.3713,
+        "longitude": 151.5934 ,
+        "height": 10
+    },
+    "josephville": {
+        "name":"Josephville",
+        "latitude": -27.9962,
+        "longitude": 152.9257,
+        "height": 10
+    },
 }
