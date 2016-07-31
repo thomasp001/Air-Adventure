@@ -19,7 +19,7 @@ $(document).ready(function() {
   // Place JavaScript code here...
     chart = new CanvasJS.Chart("myChart", {
 		title:{
-			text: "Pollutants in the air"              
+			text: "Select a location on the right."
 		},
 		data: [              
 		{
