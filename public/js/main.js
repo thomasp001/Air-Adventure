@@ -98,8 +98,21 @@ function placePins() {
         });
         myCounter++;
         marker.addListener('click', function() {
-            alert("CLIKCED!");
-            console.log(marker);
+            $.getJSON ("data/" + marker["key"] + "_average.json", function(data) {
+            console.log(data);
+            //console.log("Worked")
+            //data["Nitrogen Oxide (ppm)"]
+            console.log(chart);
+            chart["options"]["data"][0]["dataPoints"][0]["y"] = data["Carbon Monoxide (ppm)"]
+            chart["options"]["data"][0]["dataPoints"][1]["y"] = data["Nitrogen Dioxide (ppm)"]
+            chart["options"]["data"][0]["dataPoints"][2]["y"] = data["Nitrogen Oxide (ppm)"]
+            chart["options"]["data"][0]["dataPoints"][3]["y"] = data["Nitrogen Oxides (ppm)"]
+            chart["options"]["data"][0]["dataPoints"][4]["y"] = data["PM10 (ug/m^3)"]
+            chart["options"]["data"][0]["dataPoints"][5]["y"] = data["PM2.5 (ug/m^3)"]
+            chart["options"]["data"][0]["dataPoints"][6]["y"] = data["Bsp (Mm^-1)"]
+            chart.render()
+            percentageParagraph.innerHTML = "Note: This only represents " + (data["Carbon Monoxide (ppm)"] + data["Nitrogen Dioxide (ppm)"] + data["Nitrogen Oxide (ppm)"] + data["Nitrogen Oxides (ppm)"] + data["PM10 (ug/m^3)"] + data["PM2.5 (ug/m^3)"] + data["Bsp (Mm^-1)"]) + "% of the air."
+            });
           });
     }
 
