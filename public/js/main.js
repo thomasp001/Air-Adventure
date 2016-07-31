@@ -29,7 +29,7 @@ $(document).ready(function() {
 		
 		chart.render();
     var percentageParagraph = document.getElementById("percentage")
-    percentageParagraph.innerHTML = "Note: This only represents " + "10" + "% of the air."
+
     //$.getJSON("locationData.json", placePins());
 
     //$.getJSON("locationData.json", placePins());
@@ -50,6 +50,7 @@ $(document).ready(function() {
         chart["data"][1]["y"] = data["PM2.5 (ug/m^3)"]
         chart["data"][1]["y"] = data["Bsp (Mm^-1)"]
         chart.render()
+        percentageParagraph.innerHTML = "Note: This only represents " + ("10) + "% of the air."
     })
     
     //chart["data"]["dataPoints"][1]["y"] = "value"
