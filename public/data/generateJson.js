@@ -123,6 +123,26 @@ while (counter < datas.length) {
 console.log("Bsp (Mm^-1): " + (total / counted));
 myResults["Bsp (Mm^-1)"] = total / counted
     }
+
+
+var counter = 0
+var counted = 0;
+var total = 0.0
+while (counter < datas.length) {
+    if (datas[counter]["TSP (ug/m^3)"] !== "") {
+        total = total + datas[counter]["TSP (ug/m^3)"];
+    //console.log("Completed " + (counter + 1) + "/" + counted + 1);
+        counted++;
+    }
+    counter++;
+}
+//console.log(datas[1]["Nitrogen Oxide (ppm)"]);
+    if ((total / counted) > 0) {
+console.log("TSP (ug/m^3): " + (total / counted));
+myResults["TSP (ug/m^3))"] = total / counted
+    }
+
+
 fs.writeFile(result["location"] + "_average.json", JSON.stringify(myResults), function(err) {
     if(err) {
         return console.log(err);

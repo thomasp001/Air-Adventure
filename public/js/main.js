@@ -33,7 +33,8 @@ $(document).ready(function() {
                 {label: "Nitrogen Oxides", y: 0},
 				{ label: "PM10",  y: 0  },
 				{ label: "PM2.5",  y: 0 },
-                { label: "Bsp", y: 0}
+                { label: "Bsp", y: 0},
+                { label: "TSP (ug/m^3)", y: 0}
 
 			]
 		}
@@ -41,34 +42,6 @@ $(document).ready(function() {
 		});
 		
 		chart.render();
-    console.log(chart);
-
-
-
-
-    //$.getJSON("locationData.json", placePins());
-
-    //var location = prompt("Enter location");
-    console.log('this is the location')
-    console.log(location);
-    $.getJSON ("data/" + location + "_average.json", function(data) {
-        console.log(data);
-        console.log("Worked")
-        //data["Nitrogen Oxide (ppm)"]
-        console.log(chart);
-        chart["options"]["data"][0]["dataPoints"][0]["y"] = data["Carbon Monoxide (ppm)"]
-        chart["options"]["data"][0]["dataPoints"][1]["y"] = data["Nitrogen Dioxide (ppm)"]
-        chart["options"]["data"][0]["dataPoints"][2]["y"] = data["Nitrogen Oxide (ppm)"]
-        chart["options"]["data"][0]["dataPoints"][3]["y"] = data["Nitrogen Oxides (ppm)"]
-        chart["options"]["data"][0]["dataPoints"][4]["y"] = data["PM10 (ug/m^3)"]
-        chart["options"]["data"][0]["dataPoints"][5]["y"] = data["PM2.5 (ug/m^3)"]
-        chart["options"]["data"][0]["dataPoints"][6]["y"] = data["Bsp (Mm^-1)"]
-        chart.render()
-        percentageParagraph.innerHTML = "Note: This only represents " + (data["Carbon Monoxide (ppm)"] + data["Nitrogen Dioxide (ppm)"] + data["Nitrogen Oxide (ppm)"] + data["Nitrogen Oxides (ppm)"] + data["PM10 (ug/m^3)"] + data["PM2.5 (ug/m^3)"] + data["Bsp (Mm^-1)"]) + "% of the air.";
-    })
-    
-    //chart["data"]["dataPoints"][1]["y"] = "value"
-
 
 });
 
@@ -117,9 +90,10 @@ function placePins() {
             chart["options"]["data"][0]["dataPoints"][4]["y"] = data["PM10 (ug/m^3)"]
             chart["options"]["data"][0]["dataPoints"][5]["y"] = data["PM2.5 (ug/m^3)"]
             chart["options"]["data"][0]["dataPoints"][6]["y"] = data["Bsp (Mm^-1)"]
+            chart["options"]["data"][0]["dataPoints"][7]["y"] = data["TSP (ug/m^3)"]
             chart["options"]["title"]["text"] = "Air Quality for " + selectedTitle
             chart.render()
-            percentageParagraph.innerHTML = "Note: This only represents " + (data["Carbon Monoxide (ppm)"] + data["Nitrogen Dioxide (ppm)"] + data["Nitrogen Oxide (ppm)"] + data["Nitrogen Oxides (ppm)"] + data["PM10 (ug/m^3)"] + data["PM2.5 (ug/m^3)"] + data["Bsp (Mm^-1)"]) + "% of the air."
+            percentageParagraph.innerHTML = "Note: This only represents " + (data["Carbon Monoxide (ppm)"] + data["Nitrogen Dioxide (ppm)"] + data["Nitrogen Oxide (ppm)"] + data["Nitrogen Oxides (ppm)"] + data["PM10 (ug/m^3)"] + data["PM2.5 (ug/m^3)"] + data["Bsp (Mm^-1)"] + data["TSP (ug/m^3)"]) + "% of the air."
             });
           });
     }
