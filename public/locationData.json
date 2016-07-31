@@ -186,6 +186,18 @@
         "longitude": 139.4977,
         "height": 10
     },
+    "townsvillecoastguard": {
+        "name": "Townsville Coast Guard",
+        "latitude": -19.2542,
+        "longitude": 146.8257,
+        "height": 10
+    },
+    "westmackay": {
+        "name": "West Mackay",
+        "latitude": -21.1595,
+        "longitude": 149.1549,
+        "height": 10
+    },
 }
 
     }
