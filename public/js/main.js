@@ -96,13 +96,22 @@ function placePins() {
                 chart["options"]["data"][0]["dataPoints"][0]["y"] = data["Carbon Monoxide (ppm)"]
                 totall = totall + data["Carbon Monoxide (ppm)"]
             }
+            else {
+                chart["options"]["data"][0]["dataPoints"][0]["y"] = 0
+            }
             if (data["Nitrogen Dioxide (ppm)"] > 0) {
                 chart["options"]["data"][0]["dataPoints"][1]["y"] = data["Nitrogen Dioxide (ppm)"]
                 totall = totall + data["Nitrogen Dioxide (ppm)"]
             }
+            else {
+                chart["options"]["data"][0]["dataPoints"][1]["y"] = 0
+            }
             if (data["Nitrogen Oxide (ppm)"] > 0) {
                 chart["options"]["data"][0]["dataPoints"][2]["y"] = data["Nitrogen Oxide (ppm)"]
                 totall = totall + data["Nitrogen Oxide (ppm)"]
+            }
+            else {
+
             }
             if (data["Nitrogen Oxides (ppm)"] > 0) {
                 chart["options"]["data"][0]["dataPoints"][3]["y"] = data["Nitrogen Oxides (ppm)"]
