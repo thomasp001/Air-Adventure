@@ -74,6 +74,7 @@ function placePins(data) {
     //data = JSON.parse(data);
     console.log(data);
     var myCounter = 0;
+    /*
     while (myCounter < data.length) {
         var marker = new google.maps.Marker({
           position: new google.maps.LatLng(data[myCounter]["latitude"], data[myCounter]["longitude"]),
@@ -82,5 +83,6 @@ function placePins(data) {
         });
     myCounter++;
     }
+    */
 }
 
