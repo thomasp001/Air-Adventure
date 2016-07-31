@@ -80,14 +80,14 @@ function initMap() {
 
 
 function placePins() {
-    console.log("Plcing pins")
+    console.log("Placing pins")
     //data = JSON.parse(data);
-    console.log("Data below")
+    //console.log("Data below")
     //console.log(data);
     //console.log(JSON.parse(data))
     var myCounter = 0;
-    print("Location data length below")
-    print(locationData.length)
+    console.log("Location data length below")
+    console.log(locationData.length)
     while (myCounter < locationData.length) {
         console.log("Adding " + locationData[myCounter]["name"] + " with lat of " + locationData[myCounter]["latitude"] + " and long of " + locationData[myCounter]["longitude"])
         var marker = new google.maps.Marker({
