@@ -5,6 +5,7 @@ var locationData = ["abbotpoint":{"name":"Abbot Point","latitude":-19.9496,"long
 $(document).ready(function() {
 
     initMap();
+    placePins();
     /*
     $.get("locationData.json", function(data) {
         console.log("Downloading map pins")
@@ -76,7 +77,7 @@ function initMap() {
       }
 
 
-function placePins(data) {
+function placePins() {
     console.log("Plcing pins")
     //data = JSON.parse(data);
     console.log("Data below")
