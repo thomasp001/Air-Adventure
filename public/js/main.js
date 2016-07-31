@@ -18,8 +18,10 @@ $(document).ready(function() {
 				{ label: "Carbon Monoxide",  y: 10  },
 				{ label: "Nitrogen Dioxide", y: 15  },
 				{ label: "Nitrogen Oxide", y: 25  },
+                {label: "Nitrogen Oxides", y: 10},
 				{ label: "PM10",  y: 30  },
 				{ label: "PM2.5",  y: 28  }
+
 			]
 		}
 		]
@@ -40,10 +42,10 @@ $(document).ready(function() {
         console.log("Worked")
         //data["Nitrogen Oxide (ppm)"]
         console.log(chart);
-        chart["data"][1]["datapoints"]["y"] = data["Nitrogen Oxide (ppm)"]
-        chart["data"][1]["y"] = data["Nitrogen Dioxide (ppm)"]
-        chart["data"][1]["y"] = data["Nitrogen Oxides (ppm)"]
-        chart["data"][1]["y"] = data["Carbon Monoxide (ppm)"]
+        chart["options"]["data"][0]["dataPoints"][0][y] = data["Carbon Monoxide (ppm)"]
+        chart["options"]["data"][0]["dataPoints"][1][y] = data["Nitrogen Dioxide (ppm)"]
+        chart["options"]["data"][0]["dataPoints"][2][y] = data["Nitrogen Oxide (ppm)"]
+        chart["data"][1]["y"] = data["Nitrogen Oxide (ppm)"]
         chart["data"][1]["y"] = data["PM10 (ug/m^3)"]
         chart["data"][1]["y"] = data["PM2.5 (ug/m^3)"]
         chart["data"][1]["y"] = data["Bsp (Mm^-1)"]
