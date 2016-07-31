@@ -1,4 +1,4 @@
-{
+[
     "abbotpoint": {
         "name": "Abbot Point",
         "latitude": -19.9496,
@@ -161,6 +161,7 @@
         "latitude": -23.8627,
         "longitude": 151.2704,
         "height": 10
+<<<<<<< HEAD
     },
     "springwood": {
         "name": "Springwood",
@@ -175,3 +176,7 @@
         "height": 10
     },
 }
+=======
+    }
+]
+>>>>>>> 5a372f9ced77de2a0de2621d6f5b0bb9444612ce

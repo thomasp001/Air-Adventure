@@ -22,8 +22,11 @@ while (counter < datas.length) {
     counter++;
 }
 //console.log(datas[1]["Nitrogen Oxide (ppm)"]);
-console.log("Nitrogen Oxide (ppm): " + (total / counted));
-myResults["Nitrogen Oxide (ppm)"] = total / counted
+if (((total / counted) > 0)) {
+    console.log("Nitrogen Oxide (ppm): " + (total / counted));
+    myResults["Nitrogen Oxide (ppm)"] = total / counted
+}
+
 
 while (counter < datas.length) {
     if (datas[counter]["Nitrogen Dioxide (ppm)"] !== "") {
@@ -34,8 +37,10 @@ while (counter < datas.length) {
     counter++;
 }
 //console.log(datas[1]["Nitrogen Oxide (ppm)"]);
+if (((total / counted) > 0)) {
 console.log("Nitrogen Dioxide (ppm): " + (total / counted));
 myResults["Nitrogen Dioxide (ppm)"] = total / counted
+}
 while (counter < datas.length) {
     if (datas[counter]["Nitrogen Oxides (ppm)"] !== "") {
         total = total + datas[counter]["Nitrogen Oxides (ppm)"];
@@ -45,8 +50,10 @@ while (counter < datas.length) {
     counter++;
 }
 //console.log(datas[1]["Nitrogen Oxide (ppm)"]);
+    if (((total / counted) > 0)) {
 console.log("Nitrogen Oxides (ppm): " + (total / counted));
 myResults["Nitrogen Oxides (ppm)"] = total / counted
+}
 while (counter < datas.length) {
     if (datas[counter]["Carbon Monoxide (ppm)"] !== "") {
         total = total + datas[counter]["Carbon Monoxide (ppm)"];
@@ -56,9 +63,10 @@ while (counter < datas.length) {
     counter++;
 }
 //console.log(datas[1]["Nitrogen Oxide (ppm)"]);
+    if (((total / counted) > 0)) {
 console.log("Carbon Monoxide (ppm): " + (total / counted));
 myResults["Carbon Monoxide (ppm)"] = total / counted
-
+}
 
 while (counter < datas.length) {
     if (datas[counter]["PM10 (ug/m^3)"] !== "") {
@@ -69,9 +77,10 @@ while (counter < datas.length) {
     counter++;
 }
 //console.log(datas[1]["Nitrogen Oxide (ppm)"]);
+    if (((total / counted) > 0)) {
 console.log("PM10 (ug/m^3): " + (total / counted));
 myResults["PM10 (ug/m^3)"] = total / counted
-
+    }
 while (counter < datas.length) {
     if (datas[counter]["PM2.5 (ug/m^3)"] !== "") {
         total = total + datas[counter]["PM2.5 (ug/m^3)"];
@@ -81,9 +90,10 @@ while (counter < datas.length) {
     counter++;
 }
 //console.log(datas[1]["Nitrogen Oxide (ppm)"]);
+    if (((total / counted) > 0)) {
 console.log("PM2.5 (ug/m^3): " + (total / counted));
 myResults["PM2.5 (ug/m^3)"] = total / counted
-
+    }
 while (counter < datas.length) {
     if (datas[counter]["Bsp (Mm^-1)"] !== "") {
         total = total + datas[counter]["Bsp (Mm^-1)"];
@@ -93,9 +103,10 @@ while (counter < datas.length) {
     counter++;
 }
 //console.log(datas[1]["Nitrogen Oxide (ppm)"]);
+    if ((total / counted) > 0) {
 console.log("Bsp (Mm^-1): " + (total / counted));
 myResults["Bsp (Mm^-1)"] = total / counted
-
+    }
 fs.writeFile(result["location"] + "_average.json", JSON.stringify(myResults), function(err) {
     if(err) {
         return console.log(err);
