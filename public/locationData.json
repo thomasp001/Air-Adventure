@@ -209,6 +209,12 @@
         "latitude": -27.4296,
         "longitude": 153.1581,
         "height": 10
+    },
+    "wynnumwest": {
+        "name": "Wynnum West",
+        "latitude": -27.4379,
+        "longitude": 153.1495,
+        "height": 10
     }
 }
 
