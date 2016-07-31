@@ -88,6 +88,7 @@ function placePins() {
     var myCounter = 0;
 
     while (myCounter < locationData.length) {
+        console.log("Adding " + locationData[myCounter]["name"] + " with lat of " + locationData[myCounter]["latitude"] + " and long of " + locationData[myCounter]["longitude"])
         var marker = new google.maps.Marker({
           position: new google.maps.LatLng(locationData[myCounter]["latitude"], locationData[myCounter]["longitude"]),
           map: map,
