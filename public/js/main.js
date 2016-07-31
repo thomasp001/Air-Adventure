@@ -67,9 +67,6 @@ function initMap() {
 
 function placePins(data) {
     console.log("Plcing pins")
-<<<<<<< .merge_file_t45J6N
-    data = JSON.parse(data);
-=======
     //data = JSON.parse(data);
 >>>>>>> .merge_file_e6cA2L
     console.log(data);
