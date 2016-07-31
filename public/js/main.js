@@ -63,13 +63,14 @@ function initMap() {
 
 
 function placePins(data) {
+    data = JSON.parse(data);
     console.log(data);
     var myCounter = 0;
     while (myCounter < data.length) {
         var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(d[myCounter]["latitude"], d[myCounter]["longitude"]),
+          position: new google.maps.LatLng(data[myCounter]["latitude"], data[myCounter]["longitude"]),
           map: map,
-          title: d[myCounter]["name"]
+          title: data[myCounter]["name"]
         });
     myCounter++;
     }
