@@ -99,6 +99,7 @@ function placePins() {
         });
         myCounter++;
         marker.addListener('click', function() {
+            console.log("Getting data")
             $.getJSON ("data/" + marker["key"] + "_average.json", function(data) {
             console.log(data);
             //console.log("Worked")
