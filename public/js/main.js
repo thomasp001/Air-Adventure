@@ -39,6 +39,7 @@ $(document).ready(function() {
 		});
 		
 		chart.render();
+    console.log(chart);
     var percentageParagraph = document.getElementById("percentage")
 
 
