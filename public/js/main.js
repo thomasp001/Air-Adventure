@@ -127,6 +127,7 @@ function placePins() {
 
             chart["options"]["title"]["text"] = "Air Quality for " + selectedTitle
             chart.render()
+            console.log("Total" + totall);
             percentageParagraph.innerHTML = "Note: This only represents " + totall + "% of the air."
             });
           });
