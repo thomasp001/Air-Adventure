@@ -27,9 +27,7 @@ $(document).ready(function() {
 		chart.render();
     var percentageParagraph = document.getElementById("percentage")
     percentageParagraph.innerHTML = "Note: This only represents " + "10" + "% of the air."
-    $.getJSON("locationData.json", function(data) {
-        console.log(data);
-});
+    $.getJSON("locationData.json", placePins);
 
     var location = prompt("Enter location");
     console.log('this is the location')
@@ -63,7 +61,7 @@ function initMap() {
       }
 
 
-placePins = function(data) {
+function placePins(data) {
     var myCounter = 0;
     while (myCounter <= data.length) {
         var marker = new google.maps.Marker({
