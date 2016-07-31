@@ -41,7 +41,7 @@ $(document).ready(function() {
         chart["data"][1]["y"] = data["Nitrogen Dioxide (ppm)"]
         chart["data"][1]["y"] = data["Nitrogen Oxides (ppm)"]
         chart["data"][1]["y"] = data["Carbon Monoxide (ppm)"]
-        chart["data"]][1]["y"] = data["PM10 (ug/m^3)"]
+        chart["data"][1]["y"] = data["PM10 (ug/m^3)"]
         chart["data"][1]["y"] = data["PM2.5 (ug/m^3)"]
         chart["data"][1]["y"] = data["Bsp (Mm^-1)"]
         chart.render()
