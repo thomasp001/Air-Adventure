@@ -93,7 +93,8 @@ function placePins() {
         var marker = new google.maps.Marker({
           position: new google.maps.LatLng(locationData[Object.keys(locationData)[myCounter]]["latitude"], locationData[Object.keys(locationData)[myCounter]]["longitude"]),
           map: map,
-          title: locationData[Object.keys(locationData)[myCounter]]["name"]
+          title: locationData[Object.keys(locationData)[myCounter]]["name"],
+          key: Object.keys(locationData)[myCounter],
         });
         myCounter++;
         marker.addListener('click', function() {
