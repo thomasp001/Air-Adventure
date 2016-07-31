@@ -109,8 +109,8 @@ function placePins() {
                 totall = totall + data["Nitrogen Oxides (ppm)"]
             }
             if (data["PM10 (ug/m^3)"] > 0) {
-                chart["options"]["data"][0]["dataPoints"][4]["y"] = data["PM10 (ug/m^3)"]
-                totall = totall + data["PM10 (ug/m^3)"]
+                //chart["options"]["data"][0]["dataPoints"][4]["y"] = data["PM10 (ug/m^3)"]
+                //totall = totall + data["PM10 (ug/m^3)"]
             }
             if (data["PM2.5 (ug/m^3)"] > 0) {
                 chart["options"]["data"][0]["dataPoints"][5]["y"] = data["PM2.5 (ug/m^3)"]
