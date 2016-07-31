@@ -33,7 +33,7 @@ $(document).ready(function() {
 
     $.getJSON("locationData.json", function(data) {
         console.log(data);
-        placePins()
+        placePins(data)
     });
 
     //$.getJSON("locationData.json", placePins());
