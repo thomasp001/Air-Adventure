@@ -162,5 +162,16 @@
         "longitude": 151.2704,
         "height": 10
     },
-    
+    "springwood": {
+        "name": "Springwood",
+        "latitude": -27.6125,
+        "longitude": 153.1356,
+        "height": 10
+    },
+    "stuart": {
+        "name": "Stuart",
+        "latitude": -19.3212,
+        "longitude": 146.8422,
+        "height": 10
+    },
 }
