@@ -26,13 +26,13 @@ $(document).ready(function() {
 			// You can change it. 
 			type: "pie",
 			dataPoints: [
-				{ label: "Carbon Monoxide",  y: 10  },
-				{ label: "Nitrogen Dioxide", y: 15  },
-				{ label: "Nitrogen Oxide", y: 25  },
-                {label: "Nitrogen Oxides", y: 10},
-				{ label: "PM10",  y: 30  },
-				{ label: "PM2.5",  y: 28  },
-                { label: "Bsp", y: 5}
+				{ label: "Carbon Monoxide",  y: 0  },
+				{ label: "Nitrogen Dioxide", y: 0  },
+				{ label: "Nitrogen Oxide", y: 0  },
+                {label: "Nitrogen Oxides", y: 0},
+				{ label: "PM10",  y: 0  },
+				{ label: "PM2.5",  y: 08  },
+                { label: "Bsp", y: 0}
 
 			]
 		}
