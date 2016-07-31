@@ -40,7 +40,7 @@ $(document).ready(function() {
 		
 		chart.render();
     console.log(chart);
-    var percentageParagraph = document.getElementById("percentage")
+    var percentageParagraph = document.getElementById("percentage");
 
 
 
@@ -62,7 +62,7 @@ $(document).ready(function() {
         chart["options"]["data"][0]["dataPoints"][5]["y"] = data["PM2.5 (ug/m^3)"]
         chart["options"]["data"][0]["dataPoints"][6]["y"] = data["Bsp (Mm^-1)"]
         chart.render()
-        percentageParagraph.innerHTML = "Note: This only represents " + (data["Carbon Monoxide (ppm)"] + data["Nitrogen Dioxide (ppm)"] + data["Nitrogen Oxide (ppm)"] + data["Nitrogen Oxides (ppm)"] + data["PM10 (ug/m^3)"] + data["PM2.5 (ug/m^3)"] + data["Bsp (Mm^-1)"]) + "% of the air."
+        percentageParagraph.innerHTML = "Note: This only represents " + (data["Carbon Monoxide (ppm)"] + data["Nitrogen Dioxide (ppm)"] + data["Nitrogen Oxide (ppm)"] + data["Nitrogen Oxides (ppm)"] + data["PM10 (ug/m^3)"] + data["PM2.5 (ug/m^3)"] + data["Bsp (Mm^-1)"]) + "% of the air.";
     })
     
     //chart["data"]["dataPoints"][1]["y"] = "value"
