@@ -62,10 +62,11 @@ function initMap() {
 
 
 function placePins(data) {
+    console.log(data);
     var myCounter = 0;
-    while (myCounter <= data.length) {
+    while (myCounter < data.length) {
         var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(d[myCounter]["latitude"],d[myCounter]["longitude"]),
+          position: new google.maps.LatLng(d[myCounter]["latitude"], d[myCounter]["longitude"]),
           map: map,
           title: d[myCounter]["name"]
         });
