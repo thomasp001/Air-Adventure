@@ -101,6 +101,7 @@ function placePins() {
         marker.addListener('click', function() {
             console.log("Getting data")
             $.getJSON ("data/" + marker["key"] + "_average.json", function(data) {
+            console.log("Downloaded!")
             console.log(data);
             //console.log("Worked")
             //data["Nitrogen Oxide (ppm)"]
