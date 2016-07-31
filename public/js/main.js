@@ -100,7 +100,7 @@ function placePins() {
         myCounter++;
         marker.addListener('click', function() {
             console.log("Getting data")
-            console.log(marker["key"])
+            console.log(this["key"])
             $.getJSON ("data/" + this.key + "_average.json", function(data) {
             console.log("Downloaded!")
             console.log(data);
