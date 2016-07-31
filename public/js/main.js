@@ -1,11 +1,12 @@
 var map;
+var chart;
 
 $(document).ready(function() {
 
     initMap();
 
   // Place JavaScript code here...
-    var chart = new CanvasJS.Chart("myChart", {
+    chart = new CanvasJS.Chart("myChart", {
 		title:{
 			text: "Pollutants in the air"              
 		},
