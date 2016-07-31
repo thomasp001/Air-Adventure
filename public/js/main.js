@@ -37,7 +37,8 @@ $(document).ready(function() {
         console.log(data);
         console.log("Worked")
         //data["Nitrogen Oxide (ppm)"]
-        chart["data"][1]["y"] = data["Nitrogen Oxide (ppm)"]
+        console.log(chart);
+        chart["data"][1]["datapoints"]["y"] = data["Nitrogen Oxide (ppm)"]
         chart["data"][1]["y"] = data["Nitrogen Dioxide (ppm)"]
         chart["data"][1]["y"] = data["Nitrogen Oxides (ppm)"]
         chart["data"][1]["y"] = data["Carbon Monoxide (ppm)"]
