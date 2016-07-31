@@ -74,6 +74,7 @@ function placePins(data) {
     //data = JSON.parse(data);
     console.log("Data below")
     console.log(data);
+    console.log(JSON.parse(undefined)
     var myCounter = 0;
     /*
     while (myCounter < data.length) {
