@@ -115,7 +115,7 @@ function placePins() {
             chart["options"]["data"][0]["dataPoints"][4]["y"] = data["PM10 (ug/m^3)"]
             chart["options"]["data"][0]["dataPoints"][5]["y"] = data["PM2.5 (ug/m^3)"]
             chart["options"]["data"][0]["dataPoints"][6]["y"] = data["Bsp (Mm^-1)"]
-            chart["options"]["title"] = "Air Quality for Mountain Creek"
+            chart["options"]["title"]["text"] = "Air Quality for Mountain Creek"
             chart.render()
             percentageParagraph.innerHTML = "Note: This only represents " + (data["Carbon Monoxide (ppm)"] + data["Nitrogen Dioxide (ppm)"] + data["Nitrogen Oxide (ppm)"] + data["Nitrogen Oxides (ppm)"] + data["PM10 (ug/m^3)"] + data["PM2.5 (ug/m^3)"] + data["Bsp (Mm^-1)"]) + "% of the air."
             });
