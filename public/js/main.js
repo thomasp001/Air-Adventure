@@ -45,7 +45,7 @@ $(document).ready(function() {
 
     //$.getJSON("locationData.json", placePins());
 
-    var location = prompt("Enter location");
+    //var location = prompt("Enter location");
     console.log('this is the location')
     console.log(location);
     $.getJSON ("data/" + location + "_average.json", function(data) {
@@ -100,3 +100,6 @@ function placePins() {
 
 }
 
+marker.addListener('click', function() {
+    alert("CLIKCED!");
+  });
