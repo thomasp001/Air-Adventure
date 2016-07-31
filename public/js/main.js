@@ -28,7 +28,7 @@ $(document).ready(function() {
 		chart.render();
     var percentageParagraph = document.getElementById("percentage")
     percentageParagraph.innerHTML = "Note: This only represents " + "10" + "% of the air."
-    $.getJSON("locationData.json", placePins());
+    //$.getJSON("locationData.json", placePins());
 
     var location = prompt("Enter location");
     console.log('this is the location')
