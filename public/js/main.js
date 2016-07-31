@@ -31,7 +31,7 @@ $(document).ready(function() {
 		chart.render();
     var percentageParagraph = document.getElementById("percentage")
 
-    $.getJSON("locationData.json", function(data) {
+    $.get("locationData.json", function(data) {
         console.log(data);
         placePins(data)
     });
@@ -77,7 +77,7 @@ function placePins(data) {
     //data = JSON.parse(data);
     console.log("Data below")
     console.log(data);
-    console.log(JSON.parse(undefined))
+    console.log(JSON.parse(data))
     var myCounter = 0;
     /*
     while (myCounter < data.length) {
