@@ -83,6 +83,14 @@ function placePins() {
             //console.log("Worked")
             //data["Nitrogen Oxide (ppm)"]
             console.log(chart);
+                console.log(data["Carbon Monoxide (ppm)"]);
+                console.log(data["Nitrogen Dioxide (ppm)"]);
+                console.log(data["Nitrogen Oxide (ppm)"]);
+                console.log(data["Nitrogen Oxides (ppm)"]);
+                console.log(data["PM10 (ug/m^3)"]);
+                console.log(data["PM2.5 (ug/m^3)"]);
+                console.log(data["Bsp (Mm^-1)"]);
+                console.log(data["TSP (ug/m^3)"]);
             chart["options"]["data"][0]["dataPoints"][0]["y"] = data["Carbon Monoxide (ppm)"]
             chart["options"]["data"][0]["dataPoints"][1]["y"] = data["Nitrogen Dioxide (ppm)"]
             chart["options"]["data"][0]["dataPoints"][2]["y"] = data["Nitrogen Oxide (ppm)"]
