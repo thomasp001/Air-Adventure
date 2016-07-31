@@ -198,6 +198,18 @@
         "longitude": 149.1549,
         "height": 10
     },
+    "woolloongabba": {
+        "name": "Woolloongabba",
+        "latitude": -27.4975,
+        "longitude": 153.0350,
+        "height": 10
+    },
+    "wynnumnorth": {
+        "name": "Wynnum North",
+        "latitude": -27.4296,
+        "longitude": 153.1581,
+        "height": 10
+    }
 }
 
     }
