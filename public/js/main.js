@@ -64,7 +64,7 @@ function initMap() {
 
 function placePins(data) {
     console.log("Plcing pins")
-    data = JSON.parse(data);
+    //data = JSON.parse(data);
     console.log(data);
     var myCounter = 0;
     while (myCounter < data.length) {
