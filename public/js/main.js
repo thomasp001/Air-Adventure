@@ -30,7 +30,7 @@ $(document).ready(function() {
 				{ label: "Nitrogen Oxide", y: 0  },
                 {label: "Nitrogen Oxides", y: 0},
 				{ label: "PM10",  y: 0  },
-				{ label: "PM2.5",  y: 08  },
+				{ label: "PM2.5",  y: 0 },
                 { label: "Bsp", y: 0}
 
 			]
