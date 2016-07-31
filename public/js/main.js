@@ -37,7 +37,7 @@ $(document).ready(function() {
         console.log("Worked")
         data["Nitrogen Oxide (ppm)"]
         chart["data"]["Nitrogen Oxide (ppm)"][1]["y"] = data["Nitrogen Oxide (ppm)"]
-        chart["data"]["Nitrogen Dioxide (ppm)"][1]["y"] = data["Nitrogen Dixide (ppm)"]
+        chart["data"]["Nitrogen Dioxide (ppm)"][1]["y"] = data["Nitrogen Dioxide (ppm)"]
         chart["data"]["Nitrogen Oxides (ppm)"][1]["y"] = data["Nitrogen Oxides (ppm)"]
         chart["data"]["Carbon Monoxide (ppm)"][1]["y"] = data["Carbon Monoxide (ppm)"]
         chart["data"]["PM10 (ug/m^3)"][1]["y"] = data["PM10 (ug/m^3)"]
