@@ -36,7 +36,7 @@ $(document).ready(function() {
     $.getJSON ("data/" + String(location) + "_average.json", function(data) {
         console.log(data);
         console.log("Worked")
-        data["Nitrogen Oxide (ppm)"]
+        //data["Nitrogen Oxide (ppm)"]
         chart["data"]["Nitrogen Oxide (ppm)"][1]["y"] = data["Nitrogen Oxide (ppm)"]
         chart["data"]["Nitrogen Dioxide (ppm)"][1]["y"] = data["Nitrogen Dioxide (ppm)"]
         chart["data"]["Nitrogen Oxides (ppm)"][1]["y"] = data["Nitrogen Oxides (ppm)"]
