@@ -32,6 +32,7 @@ $(document).ready(function() {
     var percentageParagraph = document.getElementById("percentage")
 
     $.get("locationData.json", function(data) {
+        console.log("Downloading map pins")
         console.log(data);
         placePins(data)
     });
