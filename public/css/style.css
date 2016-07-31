@@ -6,3 +6,7 @@
 body {
     background-color: aqua;
 }
+
+#myChart {
+    margin: 10px;
+}
