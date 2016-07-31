@@ -37,13 +37,13 @@ $(document).ready(function() {
         console.log(data);
         console.log("Worked")
         //data["Nitrogen Oxide (ppm)"]
-        chart["data"]["Nitrogen Oxide (ppm)"][1]["y"] = data["Nitrogen Oxide (ppm)"]
-        chart["data"]["Nitrogen Dioxide (ppm)"][1]["y"] = data["Nitrogen Dioxide (ppm)"]
-        chart["data"]["Nitrogen Oxides (ppm)"][1]["y"] = data["Nitrogen Oxides (ppm)"]
-        chart["data"]["Carbon Monoxide (ppm)"][1]["y"] = data["Carbon Monoxide (ppm)"]
-        chart["data"]["PM10 (ug/m^3)"][1]["y"] = data["PM10 (ug/m^3)"]
-        chart["data"]["PM2.5 (ug/m^3)"][1]["y"] = data["PM2.5 (ug/m^3)"]
-        chart["data"]["Bsp (Mm^-1)"][1]["y"] = data["Bsp (Mm^-1)"]
+        chart["data"][1]["y"] = data["Nitrogen Oxide (ppm)"]
+        chart["data"][1]["y"] = data["Nitrogen Dioxide (ppm)"]
+        chart["data"][1]["y"] = data["Nitrogen Oxides (ppm)"]
+        chart["data"][1]["y"] = data["Carbon Monoxide (ppm)"]
+        chart["data"]][1]["y"] = data["PM10 (ug/m^3)"]
+        chart["data"][1]["y"] = data["PM2.5 (ug/m^3)"]
+        chart["data"][1]["y"] = data["Bsp (Mm^-1)"]
         chart.render()
     })
     
