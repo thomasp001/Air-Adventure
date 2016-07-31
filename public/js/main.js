@@ -89,7 +89,7 @@ function placePins() {
     console.log("Location data length below")
     console.log(locationData.length)
     while (myCounter < Object.keys(locationData).length) {
-        console.log("Adding " + locationData[Object.keys(locationData)[myCounter]]["name"] + " with lat of " + locationData[Object.keys(locationData)[Object.keys(locationData)[myCounter]]]["latitude"] + " and long of " + locationData[Object.keys(locationData)[myCounter]]["longitude"])
+        console.log("Adding " + locationData[Object.keys(locationData)[myCounter]]["name"] + " with lat of " + locationData[Object.keys(locationData)[Object.keys(locationData)[myCounter]]["latitude"] + " and long of " + locationData[Object.keys(locationData)[myCounter]]["longitude"])
         var marker = new google.maps.Marker({
           position: new google.maps.LatLng(locationData[Object.keys(locationData)[myCounter]]["latitude"], locationData[Object.keys(locationData)[myCounter]]["longitude"]),
           map: map,
