@@ -28,7 +28,11 @@ $(document).ready(function() {
 		chart.render();
     var percentageParagraph = document.getElementById("percentage")
     percentageParagraph.innerHTML = "Note: This only represents " + "10" + "% of the air."
+<<<<<<< .merge_file_t45J6N
+    $.getJSON("locationData.json", placePins());
+=======
     //$.getJSON("locationData.json", placePins());
+>>>>>>> .merge_file_e6cA2L
 
     var location = prompt("Enter location");
     console.log('this is the location')
@@ -65,7 +69,11 @@ function initMap() {
 
 function placePins(data) {
     console.log("Plcing pins")
+<<<<<<< .merge_file_t45J6N
+    data = JSON.parse(data);
+=======
     //data = JSON.parse(data);
+>>>>>>> .merge_file_e6cA2L
     console.log(data);
     var myCounter = 0;
     while (myCounter < data.length) {
