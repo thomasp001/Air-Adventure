@@ -96,9 +96,9 @@ function placePins() {
           title: locationData[Object.keys(locationData)[myCounter]]["name"]
         });
         myCounter++;
-        google.maps.event.addListener(marker, 'click', function(e) {
+        marker.addListener('click', function() {
             alert("CLIKCED!");
-            console.log(e);
+            console.log(marker);
           });
     }
 
