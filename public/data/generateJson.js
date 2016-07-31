@@ -27,7 +27,9 @@ if (((total / counted) > 0)) {
     myResults["Nitrogen Oxide (ppm)"] = total / counted
 }
 
-
+var counter = 0
+var counted = 0;
+var total = 0.0
 while (counter < datas.length) {
     if (datas[counter]["Nitrogen Dioxide (ppm)"] !== "") {
         total = total + datas[counter]["Nitrogen Dioxide (ppm)"];
@@ -41,6 +43,9 @@ if (((total / counted) > 0)) {
 console.log("Nitrogen Dioxide (ppm): " + (total / counted));
 myResults["Nitrogen Dioxide (ppm)"] = total / counted
 }
+var counter = 0
+var counted = 0;
+var total = 0.0
 while (counter < datas.length) {
     if (datas[counter]["Nitrogen Oxides (ppm)"] !== "") {
         total = total + datas[counter]["Nitrogen Oxides (ppm)"];
@@ -54,6 +59,9 @@ while (counter < datas.length) {
 console.log("Nitrogen Oxides (ppm): " + (total / counted));
 myResults["Nitrogen Oxides (ppm)"] = total / counted
 }
+var counter = 0
+var counted = 0;
+var total = 0.0
 while (counter < datas.length) {
     if (datas[counter]["Carbon Monoxide (ppm)"] !== "") {
         total = total + datas[counter]["Carbon Monoxide (ppm)"];
@@ -67,7 +75,9 @@ while (counter < datas.length) {
 console.log("Carbon Monoxide (ppm): " + (total / counted));
 myResults["Carbon Monoxide (ppm)"] = total / counted
 }
-
+var counter = 0
+var counted = 0;
+var total = 0.0
 while (counter < datas.length) {
     if (datas[counter]["PM10 (ug/m^3)"] !== "") {
         total = total + datas[counter]["PM10 (ug/m^3)"];
@@ -81,6 +91,9 @@ while (counter < datas.length) {
 console.log("PM10 (ug/m^3): " + (total / counted));
 myResults["PM10 (ug/m^3)"] = total / counted
     }
+var counter = 0
+var counted = 0;
+var total = 0.0
 while (counter < datas.length) {
     if (datas[counter]["PM2.5 (ug/m^3)"] !== "") {
         total = total + datas[counter]["PM2.5 (ug/m^3)"];
@@ -94,6 +107,9 @@ while (counter < datas.length) {
 console.log("PM2.5 (ug/m^3): " + (total / counted));
 myResults["PM2.5 (ug/m^3)"] = total / counted
     }
+var counter = 0
+var counted = 0;
+var total = 0.0
 while (counter < datas.length) {
     if (datas[counter]["Bsp (Mm^-1)"] !== "") {
         total = total + datas[counter]["Bsp (Mm^-1)"];
