@@ -91,34 +91,43 @@ function placePins() {
                 console.log(data["PM2.5 (ug/m^3)"]);
                 console.log(data["Bsp (Mm^-1)"]);
                 console.log(data["TSP (ug/m^3)"]);
+            var totall = 0.0;
             if (data["Carbon Monoxide (ppm)"] > 0) {
                 chart["options"]["data"][0]["dataPoints"][0]["y"] = data["Carbon Monoxide (ppm)"]
+                totall = totall + data["Carbon Monoxide (ppm)"]
             }
             if (data["Nitrogen Dioxide (ppm)"] > 0) {
                 chart["options"]["data"][0]["dataPoints"][1]["y"] = data["Nitrogen Dioxide (ppm)"]
+                totall = totall + data["Nitrogen Dioxide (ppm)"]
             }
             if (data["Nitrogen Oxide (ppm)"] > 0) {
                 chart["options"]["data"][0]["dataPoints"][2]["y"] = data["Nitrogen Oxide (ppm)"]
+                totall = totall + data["Nitrogen Oxide (ppm)"]
             }
             if (data["Nitrogen Oxides (ppm)"] > 0) {
                 chart["options"]["data"][0]["dataPoints"][3]["y"] = data["Nitrogen Oxides (ppm)"]
+                totall = totall + data["Nitrogen Oxides (ppm)"]
             }
             if (data["PM10 (ug/m^3)"] > 0) {
                 chart["options"]["data"][0]["dataPoints"][4]["y"] = data["PM10 (ug/m^3)"]
+                totall = totall + data["PM10 (ug/m^3)"]
             }
             if (data["PM2.5 (ug/m^3)"] > 0) {
                 chart["options"]["data"][0]["dataPoints"][5]["y"] = data["PM2.5 (ug/m^3)"]
+                totall = totall + data["PM2.5 (ug/m^3)"]
             }
             if (data["Bsp (Mm^-1)"] > 0) {
                 chart["options"]["data"][0]["dataPoints"][6]["y"] = data["Bsp (Mm^-1)"]
+                totall = totall + data["Bsp (Mm^-1)"]
             }
             if (data["TSP (ug/m^3)"] > 0) {
                 chart["options"]["data"][0]["dataPoints"][7]["y"] = data["TSP (ug/m^3)"]
+                totall = totall + data["TSP (ug/m^3)"]
             }
 
             chart["options"]["title"]["text"] = "Air Quality for " + selectedTitle
             chart.render()
-            percentageParagraph.innerHTML = "Note: This only represents " + (data["Carbon Monoxide (ppm)"] + data["Nitrogen Dioxide (ppm)"] + data["Nitrogen Oxide (ppm)"] + data["Nitrogen Oxides (ppm)"] + data["PM10 (ug/m^3)"] + data["PM2.5 (ug/m^3)"] + data["Bsp (Mm^-1)"] + data["TSP (ug/m^3)"]) + "% of the air."
+            percentageParagraph.innerHTML = "Note: This only represents " + totall + "% of the air."
             });
           });
     }
