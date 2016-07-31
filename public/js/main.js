@@ -4,7 +4,11 @@ var chart;
 $(document).ready(function() {
 
     initMap();
-
+    $.get("locationData.json", function(data) {
+        console.log("Downloading map pins")
+        console.log(data);
+        placePins(data)
+    });
   // Place JavaScript code here...
     chart = new CanvasJS.Chart("myChart", {
 		title:{
@@ -31,11 +35,7 @@ $(document).ready(function() {
 		chart.render();
     var percentageParagraph = document.getElementById("percentage")
 
-    $.get("locationData.json", function(data) {
-        console.log("Downloading map pins")
-        console.log(data);
-        placePins(data)
-    });
+
 
     //$.getJSON("locationData.json", placePins());
 
