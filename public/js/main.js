@@ -72,6 +72,7 @@ function initMap() {
 function placePins(data) {
     console.log("Plcing pins")
     //data = JSON.parse(data);
+    console.log("Data below")
     console.log(data);
     var myCounter = 0;
     /*
