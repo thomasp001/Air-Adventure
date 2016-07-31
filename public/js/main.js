@@ -31,7 +31,10 @@ $(document).ready(function() {
 		chart.render();
     var percentageParagraph = document.getElementById("percentage")
 
-    $.getJSON("locationData.json", placePins(data));
+    $.getJSON("locationData.json", function(data) {
+        console.log(data);
+        placePins()
+    });
 
     //$.getJSON("locationData.json", placePins());
 
