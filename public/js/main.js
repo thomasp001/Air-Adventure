@@ -101,7 +101,7 @@ function placePins() {
         marker.addListener('click', function() {
             console.log("Getting data")
             console.log(marker["key"])
-            $.getJSON ("data/" + marker["key"] + "_average.json", function(data) {
+            $.getJSON ("data/" + this.key + "_average.json", function(data) {
             console.log("Downloaded!")
             console.log(data);
             //console.log("Worked")
