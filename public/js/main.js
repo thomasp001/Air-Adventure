@@ -33,7 +33,7 @@ $(document).ready(function() {
     var location = prompt("Enter location");
     console.log('this is the location')
     console.log(location);
-    $.getJSON ("data/" + String(location) + "_average.json", function(data) {
+    $.getJSON ("data/" + location + "_average.json", function(data) {
         console.log(data);
         console.log("Worked")
         //data["Nitrogen Oxide (ppm)"]
