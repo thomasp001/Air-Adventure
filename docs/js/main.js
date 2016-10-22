@@ -63,6 +63,7 @@ $('#id').dialog({
 
 
 
+
 var map;
 var percentageParagraph = document.getElementById("percentage");
 var chart;
